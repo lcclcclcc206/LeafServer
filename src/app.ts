@@ -16,6 +16,14 @@ const dirMap: Map<string, string> = new Map<string, string>();
 for (let dir of config.dirMap) {
     dirMap.set(dir.dirId, dir.path);
 }
+dirMap.set("FileBrowser", config.fileBrowser.path);
+
+app.all("*", (req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
+    next();
+})
 
 app.get('/browser', (req, res) => {
     let list: Array<string> = new Array<string>();

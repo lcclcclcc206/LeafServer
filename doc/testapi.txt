@@ -1,6 +1,7 @@
 browser:
 http://localhost:8000/browser/D
 http://localhost:8000/browser/Host Server
+http://localhost:8000/browser/FileBrowser
 http://localhost:8000/browser/Host%20Server?relativepath=Log
 http://localhost:8000/browser/Host%20Server?relativepath=Lo
 http://localhost:8000/browser/Host%20Server?relativepath=wwwroot%5Ccss
@@ -12,3 +13,6 @@ http://localhost:8000/browser/Host Server/file/HostServer.deps.json
 http://localhost:8000/browser/Host Server/file/ByteSize.dll
 http://localhost:8000/browser/Host Server/file/NLog.Extensions.Logging.dll
 http://localhost:8000/browser/Host%20Server/file/site.css?relativepath=wwwroot%2Fcss
+
+phone：
+http://192.168.1.6:8000/browser/picture/file/1678780639689.jpg?relativepath=bili
